@@ -5,5 +5,5 @@ os.environ['PYTHON_EGG_CACHE'] = os.path.join(cwd, '..', 'misc/virtenv/lib/pytho
 virtualenv = os.path.join(cwd, '..', 'misc/virtenv/bin/activate_this.py')
 execfile(virtualenv, dict(__file__=virtualenv))
 
-import app
-app.main(os.environ['OPENSHIFT_DIY_IP'])
+import server
+server.main(os.environ['OPENSHIFT_DIY_IP'])
